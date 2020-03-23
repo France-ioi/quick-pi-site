@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<style>
+.borders tr td {
+   border: solid black 1px;
+   padding:5px;
+}
+</style>
+<body>
+   <h1>Acheter le matériel</h1>
+<p>
+Nous listons ci-dessous un ensemble de composants permettant de démarrer avec QuickPi, avec des liens vers des fournisseurs.</p>
+<p>Les liens sont susceptibles de devenir invalides de temps en temps, contactez-nous à info@france-ioi.org lorsque vous en remarquez qui ne sont plus valides.
+</p>
+<p>
+<b>Attention:</b> il est possible de commander directement les composants grove chez leur créateur <a href="https://www.seeedstudio.com/" target="new">seeedstudio.com</a>, à un prix inférieur aux fournisseurs listés ci-dessous, mais les produits sont envoyés de l'étranger, avec des frais de douane qui dépassent 20€ non indiqués lors de la commande, et le Raspberry Pi doit être commandé ailleurs. Cela peut cependant être intéressant pour de grosses commandes.
+</p>
+<p>
+N'oubliez pas qu'un même Raspberry Pi et ses capteurs/actionneurs peuvent être partagés entre un bon nombre d'élèves qui testent d'abord leur programme dans le navigateur, et n'ont besoin de tester sur le matériel qu'occasionnellement.
+</p>
+   
+<table class="borders" cellspacing=0>
+<tr>
+   <td>Photo</td>
+   <td>Description</td>
+   <td>Prix</td>
+   <td style="width:250px">Liens</td>
+</tr>
+<tr>
+   <td><img src="components/pizero.jpg" style='width:100px'></td>
+   <td>
+      <p><b>Raspberry Pi zero WH</b></p>
+      <p>W signifie Wifi. Le H indique qu'il est livré avec le connecteur 40 broches déjà soudé. Si vous achetez une version zero W (sans le H), il faudra acheter un connecteur et le souder vous même.</p>
+      <p>Une autre option est d'utiliser un Raspberry Pi 3A+, légèrement plus cher mais plus puissant. Pour ce dernier, il faut un connecteur USB male-male pour pouvoir le relier en USB à un PC.</p></td>
+   <td>20€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/raspberry/39395-platine-raspberry-pi-zero-wh.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-carte-raspberry-pi-zero-wh-27670.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/grovehat.jpg" style='width:100px'></td>
+   <td>
+      <p><b>Carte Grove</b></p>
+      <p>Attention : la version plus petite avec 8 ports, n'est pas suffisante.</p>
+      <p>Chaque capteur/actionneur est livré avec son cables grove, donc il n'est pas utile d'acheter des cables séparément.</p>
+   </td>
+   <td>11€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/shield-fomat-grove/39843-grove-base-hat-pour-raspberry-pi-103030275.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-module-grove-base-hat-103030275-28937.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/power.jpg" style='width:100px'></td>
+   <td>
+      <p><b>Chargeur 5V, 2A</b> incluant cable usb vers micro-usb</p>
+      <p>Il s'agit d'un chargeur de téléphone. Attention, un chargeur 1 Ampère risque de ne pas être assez puissant.</p>
+      <p>Le cable USB vers micro-usb doit être capable de transmettre les données, si vous voulez l'utiliser pour connecter le Raspberry au port USB d'un PC (et l'alimenter en même temps).</p>
+   </td>
+   <td>6€ à 8€</td>
+   <td>
+      <li><a href="https://www.amazon.fr/Samsung-Ensemble-ETA-U90EWEGSTD-ECBDU4AWE-chargeur/dp/B00CKBKP3E/ref=sr_1_11?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=chargeur+micro+usb+2A&qid=1553817757&s=gateway&sr=8-11" target="new">amazon</a>
+      <li><a href="https://www.fnac.com/mp30641766/Samsung-Galaxy-A5-2017-Chargeur-2A-ETA-U90EWE-cable-BLANC-Type-C-1-2m-d-Origine/w-4?omnsearchpos=8">fnac</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/microsd.jpg" style='width:100px'></td>
+   <td><b>Carte micro-SD 8Go minimum</b></td>
+   <td>4€ à 6€</td>
+   <td>
+      <li><a href="https://www.amazon.fr/Kingston-Carte-Micro-Classe-Adaptateur/dp/B003WIRFD2/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=micro+sd+8Go&qid=1553817846&s=gateway&sr=8-5" target="new">amazon</a>
+      <li><a href="https://www.fnac.com/Carte-memoire-MicroSDHC-8-Go/a9269062/w-4" target="new">fnac</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/greenled.jpg" style='width:100px'></td>
+   <td><b>LED</b></td>
+   <td>2€</td>
+   <td>
+      <li>lextroinic <a href="https://www.lextronic.fr/leds-afficheurs-lcd/28960-module-grove-led-rouge-5-mm.html" target="new">rouge</a>, <a href="https://www.lextronic.fr/leds-afficheurs-lcd/28961-module-grove-led-verte-5-mm.html" target="new">verte</a>, <a href="https://www.lextronic.fr/leds-afficheurs-lcd/28930-module-grove-led-bleue-5-mm.html" target="new">bleue</a>
+      <li>gotronic <a href="https://www.gotronic.fr/art-led-rouge-5-mm-grove-104030005-19005.htm" target="new">rouge</a>, <a href="https://www.gotronic.fr/art-led-verte-3-ou-5-mm-grove-104030007-19001.htm" target="new">verte</a>, <a href="https://www.gotronic.fr/art-led-bleue-5-mm-grove-104030010-18999.htm" target="new">bleue</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/buzzer.jpg" style='width:100px'></td>
+   <td><b>Buzzer</b></td>
+   <td>2€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/modules-divers/28969-module-grove-buzzer-piezo.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-module-buzzer-grove-107020000-19009.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/button.jpg" style='width:100px'></td>
+   <td><p><b>Bouton</b></p><p>Nous recommendons d'en acheter deux.</p></td>
+   <td>2€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/boutons-claviers/28884-module-bouton-grove-101020003.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-module-bouton-grove-101020003-19052.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/potentiometer.jpg" style='width:100px'></td>
+   <td><b>Potentiomètre</b></td>
+   <td>3€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/potentiometres-joystick/28907-module-grove-potentiometre-lineaire.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-module-potentiometre-grove-101020017-19061.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/magneticswitch.jpg" style='width:100px'></td>
+   <td><p><b>Interrupteur magnétique</b></p><p>Permet de détecter la présence d'un champ magnétique. On peut par exemple détecter si une porte est fermée, ou compter le nombre de rotations d'une roue sur laquelle sont fixés des aimants.</td>
+   <td>3€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/capteurs-divers/28887-module-grove-ils.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-inter-magnetique-grove-101020038-19051.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/distance.jpg" style='width:100px'></td>
+   <td><p><b>Capteur de distance à ultrasons</b></p></td>
+   <td>5€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/capteurs-ultrason-hyper/28943-module-grove-telemetre-ultrason.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-telemetre-a-ultrasons-grove-101020010-18976.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/light.jpg" style='width:100px'></td>
+   <td><p><b>Capteur de lumière</b></p></td>
+   <td>3€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/capteurs-lumiere-couleur/28992-module-grove-capteur-de-luminosite.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-detecteur-de-lumiere-grove-v1-2-101020132-25427.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/temperature.jpg" style='width:100px'></td>
+   <td><p><b>Capteur de température</b></p></td>
+   <td>3€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/temperature-meteo/28923-module-grove-capteur-de-temperature.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-capteur-de-temperature-grove-101020015-18965.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/screen.jpg" style='width:100px'></td>
+   <td><p><b>Écran LCD 2 lignes de 16 caractères</b></p></td>
+   <td>6.5€</td>
+   <td>
+      <li><a href="https://www.lextronic.fr/leds-afficheurs-lcd/39822-grove-afficheur-lcd-2x16-blanc-bleu.html" target="new">lextronic</a>
+      <li><a href="https://www.gotronic.fr/art-afficheur-lcd-i2c-grove-104020111-28878.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/servo_cables.jpg" style='width:100px'></td>
+   <td><p><b>Cable Grove pour 2 Servo-moteurs</b></p><p>Si vous achetez un servo-moteur sans cable grove inclus</p></td>
+   <td>1.2€</td>
+   <td>
+      <a href="https://www.gotronic.fr/art-cable-grove-2-servos-19071.htm" target="new">gotronic</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/servo.jpg" style='width:100px'></td>
+   <td><p><b>Servo-moteur</b></p>
+   <p>On trouve des servo-moteurs avec cable grove à 10.90€. Il est possible de réduire le coût en achetant séparément un cable pour 2 Servo-moteurs à 1.2€, et un petit servo-moteur bleu à 5€.</p><p>Notez qu'un servo-moteur ne peut tourner que d'un demi-tour.</p></td>
+   <td>5€</td>
+   <td>
+      <li><a href="https://www.gotronic.fr/art-servomoteur-sg90-19377.htm" target="new">gotronic (5€ sans cable)</a>
+      <li><a href="https://www.gotronic.fr/art-servomoteur-grove-20640.htm" target="new">gotronic (10.90€ avec cable)</a>
+      <li><a href="https://www.lextronic.fr/moteurs-servomoteurs/20858-servomoteur-grove.html" target="new">lextroninc (10.90€ avec cable)</a>
+   </td>
+</tr>
+</table>
+<p>
+En option, un seul pour l’ensemble de la classe :
+</p>
+<table class="borders" cellspacing=0>
+<tr>
+   <td>Photo</td>
+   <td>Description</td>
+   <td>Prix</td>
+   <td>Liens</td>
+</tr>
+<tr>
+   <td><img src="images/access_point.png" style="width:100px"></td>
+   <td><p><b>Pont wifi</b></p><p>À connecter au réseau local, si pas de réseau wifi utilisable. Vérifiez avec l'administration système du réseau, avant de l'acheter.</p></td>
+   <td>30€</td>
+   <td>
+      <li><a href="https://www.amazon.fr/TP-Link-Routeur-150Mbps-Ethernet-TL-MR3020/dp/B00634PLTW/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=TL-MR3020&qid=1553819935&s=gateway&sr=8-2" target="new">amazon</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/sdcard_reader.png" style="width:100px"></td>
+   <td><p><b>Lecteur de carte micro-SD</b></p><p>Si vous avez un lecteur de SD-Card (c'est souvent le cas des ordinateurs portables), vous pouvez vous contenter d'acheter une carte micro-SD fournie avec un adaptateur vers SD-card, pour 2-3€ de plus qu'une carte micro-SD seule.</td>
+   <td>8€</td>
+   <td>
+      <li><a href="https://www.amazon.fr/Philonext-Adaptateur-Standard-Connecteur-Notebooks/dp/B06XTR3KPV/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=sd+card+lecteur&qid=1553820008&s=gateway&sr=8-2" target="new">amazon</a>
+   </td>
+</tr>
+<tr>
+   <td><img src="components/magnets.png" style="width:100px"></td>
+   <td>
+      <p><b>Pack de 10 aimants neodyme ronds</b></p>
+      <p>Pour activer l'interrupteur magnétique. Par exemple à coller sur une roue pour compter des tours.</td>
+   <td>2€</td>
+   <td>
+      <li><a href="https://www.amazon.fr/TOOGOO-Aimants-Disques-Puissant-N%C3%A9odyme/dp/B07N13ZB64/ref=sr_1_11?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=10+aimants+n%C3%A9odyme+ronds&qid=1553820126&s=gateway&sr=8-11-spell" target="new">amazon</a>
+   </td>
+</tr>
+</table>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+   <h1>Éditer le fichier de configuration</h1>
+   <p>
+      Si vous souhaitez connecter votre Raspberry Pi par Bluetooth ou Wifi, vous devrez éditer le fichier de configuration situé sur la carte micro-SD.
+   </p>
+   <p>
+      Branchez votre carte micro-SD sur un ordinateur, grâce à un adaptateur vers une carte SD ou un port USB.
+   </p>
+   <img src="images/microsd_adapter.png" style="width:200px"/>
+   <p>
+      Refermez les éventuels messages d'alerte vous disant que la carte a un problème ou qu'elle doit être formatée. Ces messages sont à ignorer.
+   </p>
+   <p>
+      Depuis votre explorateur, accéder au lecteur qui correspond à la carte que vous venez de brancher. Il s'appellera probablement <code>boot</code>
+   </p>
+   <img src="images/sdcard_files.png" style="width:500px"/> 
+   <p>
+      Ouvrez le fichier <code>quickpi.txt</code> dans un éditeur de texte. La première fois, son contenu ressemblera à ceci :
+   </p>
+   <pre>
+SSID=wifinetworkname
+PASSWORD=wifipassword
+STATICNETWORK=1
+STATICIPADDR=192.168.1.31
+STATICGATEWAY=192.168.1.1
+STATICDNS=8.8.8.8
+
+ENABLEBLUETOOTH=0
+
+NAME=quickpi1
+SCHOOL=schoolkey
+   </pre>
+   
+   <p>
+      Vous pouvez alors faire les modifications décrites dans les sections de configuration du wifi ou bluetooth.
+   </p>
+   <h2>Enregistrez et éjectez</h3>
+   <p>
+      Après avoir modifié le fichier de configuration, enregistrez le, et éjectez proprement la carte micro-sd de votre ordinateur (comme avant d'éjecter une clé USB).
+   </p>
+   <img src="images/sdcard_eject.png" style="width:200px"/>
+   <p>
+      Replacez alors la carte SD dans le Raspberry PI alors qu'il est éteint
+   </p>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+   <h1>Connecter son Raspberry par Wifi</h1>
+   <p>
+   La connexion par Wifi demande un peu plus d'étapes que celle par USB, et peut nécessiter une intervention d'un administrateur du réserau. C'est cependant celle que nous recommendons lorsqu'elle est possible, car cela fait du Raspberry Pi un véritable objet connecté, indépendant de l'ordinateur utilisé pour le programmer.
+   </p>
+   <h2>Si vous n'avez pas de wifi.</h2>
+   <p>
+   Si vous ne disposez pas d'un réseau sans fil, mais d'un réseau câblé en ethernet, vous pouvez créer un point d'accès sans fil, avec un appareil dédié, par exemple le point d'accès bon marché TL-MR3020, que nous avons validé pour cet usage.
+   </p>
+   <img src="images/access_point.png" style="width:300px">
+   <p>
+   Branchez ce boîtier à une source de courant, placez le bouton sélecteur sur la position <b>AP</b> et connectez-le à votre réseau avec le câble fourni.
+   </p>
+   <p>
+   Un réseau wifi sera créé, dont le nom (SSID) et le mot de passe (KEY) sont imprimés sur le côté du boîtier, ou fournis dans la documentation de celui-ci.
+   <h2>Informations sur le réseau Wifi.</h2>
+   <p>
+      Avant de pouvoir configurer le Raspberry Pi, vous devez obtenir les informations suivantes sur votre réseau Wifi.
+   </p>
+   <h3>1) Quel est le SSID de votre réseau Wifi ?</h3>
+   <p>
+      Il s'agit du nom du réseau. Il peut généralement se trouver en listant les réseaux Wifi disponibles, depuis un téléphone portable ou ordinateur capable de se connecter en Wifi.
+   </p>
+   <h3>2) Quel est le mot de passe de votre réseau Wifi ?</h3>
+   <h3>3) Les adresses IP du réseau sont-elles statiques ou dynamiques ?</h3>
+   <p>
+      Si vous parvenez à vous connecter au réseau depuis un téléphone portable, c'est que les adresses IP sont attribuées en DHCP, c'est à dire automatiquement. Les adresses IP sont dites "dynamiques".
+   </p>
+   <p>
+      Si vous n'y parvenez pas, c'est que l'accès est restreint à certaines adresses IP voire à certains appareils, via leur adresse MAC. L'administrateur système doit alors attribuer une adresse IP au Raspberry PI, et/ou autoriser l'accès à son adresse MAC.
+   </p>
+   <p>
+      TODO: procedure pour obtenir l'adresse MAC (en préparation)
+   </p>
+   <p>
+      Si les adresses IP sont statiques, vous devrez obtenir de l'administrateur une adresse IP attribuée au Raspberry Pi, l'adresse IP de la passerelle (gateway), et l'adresse IP du DNS à utiliser.
+   </p>
+   <p>
+      Une fois que vous avez obtenu toutes les informations, vous pouvez passer à la suite. S'il vous en manque, utilisez le mode de connexion USB ou Bluetooth en attendant.
+   </p>
+   <h2>Ouverture du fichier de configuration</h2>
+   <p>
+      Suivez la procédure d'ouverture du fichier de configuration quickpi.txt.
+   <h2>Édition de la configuration</h2>
+   <h3>1) Renseignez le SSID</h3>
+   <p>
+      Mettez le SSID de votre réseau juste apès "SSID=". Par exemple s'il s'agit de "MonReseau", la ligne doit devenir :
+   </p>
+   <pre>SSID=MonReseau</pre>
+   <h3>2) Renseignez le mot de passe</h3>
+   <p>
+      Mettez le mot de passe de votre réseau juste après "PASSWORD=". Par exemple s'il s'agit de "MonMotDePasse", la ligne doit devenir :
+   </p>
+   <pre>PASSWORD=MonMotDePasse</pre>
+   <h3>3) Indiquez le type de réseau</h3>
+   <p>Après "STATICNETWORK=", mettez un 0 si les adresses IP sur ce réseau sont attribuées dynamiquement, et un 0 sinon.</p>
+   <h3>4) Si c'est un réseau statique uniquement</h3>
+   <p>Indiquez l'adresse IP attribuée au Raspberry Pi après "STATICIPADDR=".</p>
+   <p>Indiquez l'adresse IP de la passerelle (Gateway) après "STATICGATEWAY=".</p>
+   <p>Indiquez l'adresse IP du DNS après "STATICDNS=".</p>
+   <h3>5) Choisisez un nom pour votre Raspberry</h3>
+   <p>Attribuez un nom à chacun des Raspberry que vous utiliserez sur le même réseau. Utilisez des lettres minuscules non accentuées et des chiffres, mais pas d'espaces. Une fois un nom choisi, collez une étiquette avec ce nom sur le Raspberry.</p>
+   <p>Renseignez ce nom après "NAME=" dans la configuration.</p>
+   <h3>6) Choissez un nom pour l'établissement</h3>
+   <p>Attribuer un nom à votre établissement, qui sera commun à tous les Raspberry Pi que vous connecterez sur le même réseau. Utilisez des lettres minuscules non accentuées et des chiffres, mais pas d'espaces. Vous pouvez aussi l'ajouter sur l'étiquette.</p>
+   <p>Renseignez ce nom après "SCHOOL=" dans la configuration.</p>
+   
+   <h2>Enregistrez et éjectez</h3>
+   <p>
+      Après avoir modifié le fichier de configuration, enregistrez le, et éjectez proprement la carte micro-sd de votre ordinateur (comme avant d'éjecter une clé USB).
+   </p>
+   <img src="images/sdcard_eject.png" style="width:200px"/>
+   <p>
+      Replacez alors la carte SD dans le Raspberry PI alors qu'il est éteint
+   </p>
+   <h2>Testez la connexion</h2>
+   <p>
+      Allumez le Raspberry, et attendez une petite minute pour être sûr qu'il a bien démarré.
+   </p>
+   <p>
+      Chargez alors l'interface de QuickPi, puis cliquez sur le bouton "Connecter".
+   </p>
+   <img src="images/connect.png" style="width:200px"/>
+   <p>
+   Sélectionnez l'onglet Wifi dans la fenêtre qui s'ouvre.
+   </p>
+   <img src="images/connect_wifi.png" style="width:500px"/>
+   </p>
+   <p>
+      Dans le premier champ de saisie, entrez le nom choisi pour votre établissement.
+   </p>
+   <p>
+      Cliquez alors sur "GET LIST", pour charger la liste des noms de Raspberry Pi connus pour cet établissement.
+   </p>
+   <p>
+      Sélectionnez le nom de votre Raspberry. Son adresse IP apparaît alors.
+   </p>
+   <p>
+      Cliquez alors sur "Connecter l'appareil". Après quelques instants, le bouton "Connecter" de l'interface se réduit et un bouton "Installer" apparaît., 
+   </p>
+   <img src="images/connected.png" style="width:250px"/>
+   <p>
+   Cela signifie que le Raspberry Pi est bien connecté, et que vous pouvez interagir avec.
+   </p>
