@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bouton (off)</title>
+    <defs>
+        <linearGradient x1="50%" y1="25.5055147%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6BAAF4" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="16" width="40" height="40" rx="2"></rect>
+        <filter x="-3.8%" y="-3.8%" width="107.5%" height="115.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.368627451   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="4" y="22" width="32" height="29" rx="2"></rect>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="66.6420118%" x2="47.1285242%" y2="40.7502949%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="7" y="32" width="26" height="15" rx="2"></rect>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#000000" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-10" x="7" y="16" width="26" height="22" rx="2"></rect>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="22.475063%" y1="72.475063%" x2="77.524937%" y2="72.475063%" id="linearGradient-12">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M20,9 C26.627417,9 32,14.372583 32,21 C32,21.681359 31.9432133,22.3494548 31.8341145,22.9998127 C31.9431553,23.6498628 32,24.318293 32,25 C32,31.627417 26.627417,37 20,37 C13.372583,37 8,31.627417 8,25 C8,24.318293 8.05684471,23.6498628 8.16605266,22.9991908 C8.05678669,22.3494548 8,21.681359 8,21 C8,14.372583 13.372583,9 20,9 Z" id="path-13"></path>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-15">
+            <stop stop-color="#4A90E2" offset="0%"></stop>
+            <stop stop-color="#2E5E95" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Bouton-(off)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BOUTON-Copy-2" transform="translate(16.000000, 3.000000)">
+            <g id="BOUTON-Copy">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Rectangle-Copy-6">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="#2E5E95" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <g id="Rectangle-Copy-6">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use fill="#E0E1E7" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <use fill-opacity="0.3" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                </g>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                    <use fill="#E0E1E7" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <use fill-opacity="0.3" fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+                </g>
+                <path d="" id="Path-11" stroke="#979797"></path>
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                    <use fill="#E0E1E7" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    <use fill-opacity="0.3" fill="url(#linearGradient-12)" fill-rule="evenodd" xlink:href="#path-13"></use>
+                </g>
+                <circle id="Oval-Copy-14" fill="#D8D8D8" cx="20" cy="21" r="12"></circle>
+                <path d="M11,10 L29,10 L29,21 C29,25.9705627 24.9705627,30 20,30 C15.0294373,30 11,25.9705627 11,21 L11,21 L11,10 Z" id="Combined-Shape" fill="#2E5E95"></path>
+                <circle id="Oval-Copy-15" fill="url(#linearGradient-15)" cx="20" cy="9" r="9"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

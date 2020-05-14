@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Buzzer Copy</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2E5E95" offset="0%"></stop>
+            <stop stop-color="#2E5E95" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="25.5055147%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6BAAF4" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="21" cy="27" r="21"></circle>
+        <filter x="-3.6%" y="-3.6%" width="107.1%" height="114.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.368627451   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#2E5E95" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-6">
+            <stop stop-color="#CDCCCC" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-7" cx="44.5351404" cy="28.0909896" r="5"></circle>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.368627451   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Buzzer-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-18" transform="translate(8.000000, 7.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="3" y="0" width="36" height="13" rx="2"></rect>
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <circle id="Oval" fill="url(#linearGradient-5)" cx="21" cy="27" r="5"></circle>
+            <circle id="Oval" fill="url(#linearGradient-6)" cx="21" cy="27" r="3"></circle>
+            <path d="M35.3172157,8.29549482 C43.3172157,12.1679329 47.3172157,18.3345995 47.3172157,26.7954948" id="Path-6" stroke="#2E5E95" stroke-width="5" stroke-linecap="round" transform="translate(41.317216, 17.545495) rotate(16.000000) translate(-41.317216, -17.545495) "></path>
+            <g id="Oval" transform="translate(44.535140, 28.090990) rotate(16.000000) translate(-44.535140, -28.090990) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-7"></use>
+            </g>
+            <path d="M1,45 C3.66666667,51 9.33333333,54.3333333 18,55" id="Path-21" stroke="#F5A623" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

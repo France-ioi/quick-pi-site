@@ -1,53 +1,331 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-   <div style="width:250px">
-      <h1>QuickPi</h1>
-      <i>QuickPi est encore en cours de développement. Les documentations et l'application sont en cours de finalisation. Elles fonctionnent mais peuvent encore contenir des erreurs. Merci de nous les signaler à info@france-ioi.org</i>
-      <p>1) <a href="QuickPi_presentation.pdf" target="doc">Découvrir le projet</a>
-      
-      <p>2) <a href="doc_purchase.html" target="doc">Acheter le matériel</a></p>
+<!DOCTYPE html>
 
-      <p>3) <a href="doc_sd_card.html" target="doc">Installer la carte SD</a></p>
-      <p>4) Préparer le matériel
-      <li><a href="doc_hardware_zerow.html" target="doc">Raspberry Pi Zéro WH</a><br/>
-      <li><a href="doc_hardware_3a.html" target="doc">Raspberry Pi 3A+</a>
-      <li><a href="doc_hardware_leds.html" target="doc">LEDs</a>
-      </p>
-      <p>5) Configurer le Raspberry Pi
-      <li><a href="doc_configure.html" target="doc">Ouvrir quickpi.txt</a>
-      <li><a href="doc_configure_wifi.html" target="doc">Configurer le wifi</a>
-      <li><a href="doc_configure_bluetooth.html" target="doc">Configurer le bluetooth</a>
-      </p>
-      <p>6) Connecter le Raspberry Pi
-      <li><a href="doc_connect_usb.html" target="doc">Par un port USB</a>
-      <li><a href="doc_connect_bluetooth.html" target="doc">Par Bluetooth</a>
-      <li><a href="doc_connect_wifi.html" target="doc">Par le wifi</a>
-      <p>7) Programmer le Raspberry Pi
-         <li>Exercice basique (en anglais)
-         <ul>
-         <li><a href="http://static-items.algorea.org/files/checkouts/04600caf1cdc53dd99f874ba6d2cf2cb/1-led/index.html" target="_blank">en Blockly</a>
-         <li><a href="http://static-items.algorea.org/files/checkouts/04600caf1cdc53dd99f874ba6d2cf2cb/1-led/index.html?language=python" target="_blank">en Python</a>
-         <li><a href="http://static-items.algorea.org/files/checkouts/04600caf1cdc53dd99f874ba6d2cf2cb/1-led/index.html?language=scratch" target="_blank">en Scratch</a>
-         </ul>
-         <li>Un autre exercice
-         <ul>
-         <li><a href="http://static-items.algorea.org/files/checkouts/2236f2d785bf59b5f9c96d87b8832dd1/2-loop/index.html" target="_blank">en Blockly</a>
-         <li><a href="http://static-items.algorea.org/files/checkouts/2236f2d785bf59b5f9c96d87b8832dd1/2-loop/index.html?language=python" target="_blank">en Python.</a>
-         <li><a href="http://static-items.algorea.org/files/checkouts/2236f2d785bf59b5f9c96d87b8832dd1/2-loop/index.html?language=scratch" target="_blank">en Scratch.</a>
-         </ul>
-         <li>Version complète
-         <ul>
-         <li><a href="http://static-items.algorea.org/files/checkouts/b9d62b976051ae607874425ee5584f5f/testbed/index.html" target="_blank">en Blockly</a>
-         <li><a href="http://static-items.algorea.org/files/checkouts/b9d62b976051ae607874425ee5584f5f/testbed/index.html?language=python" target="_blank">en Python</a>
-         <li><a href="https://static-items.algorea.org/files/checkouts/b9d62b976051ae607874425ee5584f5f/testbed/index.html?language=scratch" target="_blank">en Scratch</a>
-         </ul>
-      </p>
-   </div>
-   
-   <div style="position:fixed;left:260px;top:0px;bottom:0px;right:0px;">
-      <iframe name="doc" style="width:100%;height:100%" src=""></iframe>
-   </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Quick Pi</title>
+    <meta name="description" content="France IOI" />
+    <meta name="author" content="Mathias Hiron" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <span
+        id="menu"
+        class="d-flex menu-handle text-uppercase align-items-center text-white position-fixed f-titillium-b"
+      >
+        <i class="fa fa-bars"></i>
+        <span>Menu</span>
+      </span>
+      <div id="sidenav" class="sidenav">
+        <span id="close-menu" class="d-flex text-uppercase align-items-center text-white f-titillium-b">
+          <i class="fa fa-times"></i>
+          <span>Menu</span>
+        </span>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30 active" href="index.html">Accueil</a>
+          </li>
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30" href="material.html">Matériel</a>
+          </li>
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30" href="environment.html">Environnement</a>
+          </li>
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30" href="configuration.html">Configuration</a>
+          </li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <div class="row bk-green">
+        <div class="container">
+          <div class="row position-relative">
+            <div class="france-ioi position-absolute d-flex align-items-center justify-content-center">
+              <img src="assets/images/france-ioi.png">
+            </div>
+            <div class="col-lg-6 col-sm-12 home-desc">
+              <div
+                class="d-flex flex-column align-items-center justify-content-center h-100"
+              >
+                <img class="mb-4" src="assets/images/QuickPI.svg" />
+                <div class="text-white text-center f-titillium-b f-size__16"
+                  >
+                  <p>Une application web, du matériel et du contenu pédagogique pour commencer à programmer ses objets connectés en quelques minutes.</p>
+                  <p>Quick-pi est tout particulièrement adapté à l'utilisation en classe<br/>(collège, SNT, NSI).</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 home-img">
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="assets/images/home.svg" />
+              </div>
+            </div>
+            <div class="down-arrow position-absolute d-none d-lg-flex align-items-center justify-content-center text-white">
+              <i class="fa fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider white-green">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="divider green-white">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 env-img">
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <img src="assets/images/environment.svg" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue section-title"
+                  >Un environnement de programmation…</span
+                >
+                <ul class="item-list">
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-code"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Programmez votre objet connecté en Python, ou en langages visuels Blockly ou Scratch.</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-desktop"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Simulez vos programmes dans votre navigateur, avec ou sans matériel.</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-desktop"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Exécutez vos programmes pas à pas, tout en visualisant les mesures de vos capteurs.</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-chart-bar"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Enfin, installez les pour obtenir un objet connecté autonome.</span
+                    >
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                  <a class="btn list-btn bk-blue text-white text-uppercase f-titillium-b f-size__12" href="environment.html">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider white-blue">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="divider blue-white">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="row bk-blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 pi-desc">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 text-white mb-3 section-title"
+                  >Du matériel adapté…</span
+                >
+                <ul class="item-list">
+                  <li class="item">
+                    <span
+                      class="item-icon bk-orange text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-box-open"></i>
+                    </span>
+                    <span class="item-text text-white f-titillium-r f-size__18"
+                      >Réalisez vos projets en tous genres grâce à notre carte pour Raspberry Pi qui intègre 10 capteurs et 5 actionneurs.</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-orange text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-plug"></i>
+                    </span>
+                    <span class="item-text text-white f-titillium-r f-size__18"
+                      >Combinez la au Raspberry Pi Zero WH pour obtenir un objet compact qui communique en Wifi, USB ou Bluetooth.</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-orange text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-infinity"></i>
+                    </span>
+                    <span class="item-text text-white f-titillium-r f-size__18"
+                      >Branchez de nombreux capteurs et actionneurs sans faire d'électronique grâce aux quatre ports Grove.</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-orange text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-wrench"></i>
+                    </span>
+                    <span class="item-text text-white f-titillium-r f-size__18"
+                      >L'environnement peut aussi fonctionner avec une simple carte d'extension Grove pour Raspberry Pi.</span
+                    >
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                  <a class="btn list-btn bk-orange text-white text-uppercase f-titillium-b f-size__12" href="material.html">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 pi-img">
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <img src="assets/images/pi.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider white-blue-inv">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="divider blue-white-inv">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 computer-img">
+              <div class="d-flex align-items-center justify-content-center h-100">
+                <img src="assets/images/computer.svg" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue section-title"
+                  >Du contenu pédagogique.</span
+                >
+                <ul class="item-list">
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-clipboard-check"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Apprenez à programmer votre objet connecté à votre rythme grâce à de nombreux exercices et à une aide en ligne.</span
+                    >
+                  </li>
+                  <!--
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-cubes"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Nombreux projets possibles</span
+                    >
+                  </li>-->
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-microscope"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Appliquez la programmation à d'autres matières, en réalisant des expériences en physique, chimie, biologie...</span
+                    >
+                  </li>
+                  <li class="item">
+                    <span
+                      class="item-icon bk-green text-white d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa fa-chart-line"></i>
+                    </span>
+                    <span class="item-text f-titillium-r f-size__18"
+                      >Enseignants, suivez l'activité des élèves grâce à un tableau de bord montrant le détail de leur progression.</span
+                    >
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                  <a class="btn list-btn bk-blue text-white text-uppercase f-titillium-b f-size__12">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider white-blue">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="divider blue-white">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="row bk-blue">
+        <div class="container">
+          <div class="d-flex flex-column f-footer">
+            <div class="quick-pi-bottom d-flex align-items-center justify-content-center">
+              <img src="assets/images/QuickPI.svg">
+            </div>
+            <span class="text-white f-size__18 footer-text text-center">L’environnement QuickPi est un projet de France-ioi, développé avec le soutien de la fondation Tezos, d'Amazon et de notre partenaire historique, Epita.</span>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+              <a class="link-wrapper d-flex align-items-center justify-content-center" href="http://france-ioi.org" target="_blank">
+                <img src="assets/images/france-ioi.png">
+              </a>
+              <a class="link-wrapper d-flex align-items-center justify-content-center" href="https://tezos.foundation" target="_blank">
+                <img class="tezos" src="assets/images/tezos.png">
+              </a>
+              <a class="link-wrapper d-flex align-items-center justify-content-center" href="https://amazon.fr" target="_blank">
+                <img src="assets/images/amazon.png">
+              </a>
+              <a class="link-wrapper d-flex align-items-center justify-content-center" href="https://www.epita.fr" target="_blank">
+                <img src="assets/images/epita.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

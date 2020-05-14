@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="77px" viewBox="0 0 200 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Screen</title>
+    <defs>
+        <linearGradient x1="50%" y1="25.5055147%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6BAAF4" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="200" height="74" rx="2"></rect>
+        <filter x="-0.8%" y="-2.0%" width="101.5%" height="108.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.368627451   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#2E5E95" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="16" y="9" width="168" height="56" rx="2"></rect>
+        <filter x="-0.9%" y="-2.7%" width="101.8%" height="110.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.368627451   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ÉCRAN">
+            <g id="Group-13">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <circle id="Oval" fill="#2E5E95" cx="192" cy="8" r="3"></circle>
+                <circle id="Oval-Copy-11" fill="#2E5E95" cx="192" cy="67" r="3"></circle>
+                <circle id="Oval-Copy-10" fill="#2E5E95" cx="8" cy="8" r="3"></circle>
+                <circle id="Oval-Copy-12" fill="#2E5E95" cx="8" cy="67" r="3"></circle>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <rect id="Rectangle" fill="#FFFFFF" x="20" y="13" width="160" height="47" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

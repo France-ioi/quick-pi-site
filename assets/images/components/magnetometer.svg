@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="65px" viewBox="0 0 57 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2E5E95" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="25.5055147%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6BAAF4" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <path d="M13.1733333,7.14095449e-13 C22.5910738,0.103031282 26.8226669,4.35305439 25.8682688,12.75192 L25.8682688,12.75192 L23.7961974,34 L17.5169642,34 L19.5890357,12.75192 C19.9110476,8.8577249 17.6569246,6.91062736 12.8266667,6.91062736 L13,6.912 L12.8747966,6.91316265 C8.2502717,6.99260152 6.09566096,8.93885397 6.41096433,12.75192 L8.48303578,34 L2.20380263,34 L0.131731189,12.75192 C-0.822666905,4.35305439 3.40892622,0.103031282 12.8265106,0.00185066974 C12.8850237,7.14095449e-13 12.9431869,0.00015511265 13.0011561,0.00046533795 L13.1733333,7.14095449e-13 L13.1733333,7.14095449e-13 Z" id="path-3"></path>
+    </defs>
+    <g id="Quik-Algo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="E.01.b---Concours---QuickPi-alternate-obects" transform="translate(-896.000000, -422.000000)">
+            <g id="OLD" transform="translate(528.000000, 144.000000)">
+                <g id="Group-7" transform="translate(368.000000, 278.000000)">
+                    <rect id="Rectangle-Copy-7" fill="#F1F2F7" x="0" y="33" width="56" height="1"></rect>
+                    <rect id="Rectangle" fill="#F1F2F7" x="0" y="20" width="56" height="1"></rect>
+                    <rect id="Rectangle-Copy-8" fill="#F1F2F7" x="0" y="47" width="56" height="1"></rect>
+                    <rect id="Rectangle-Copy-9" fill="#F1F2F7" x="0" y="61" width="56" height="1"></rect>
+                    <g id="Group-7-Copy" transform="translate(28.500000, 3.500000) rotate(-270.000000) translate(-28.500000, -3.500000) translate(25.000000, -25.000000)" fill="url(#linearGradient-1)">
+                        <rect id="Rectangle" x="1.13686838e-13" y="0" width="7" height="57" rx="2"></rect>
+                    </g>
+                    <g id="Aimant" transform="translate(29.000000, 48.000000) rotate(-180.000000) translate(-29.000000, -48.000000) translate(16.000000, 31.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                        <rect id="Rectangle" fill="#F5A623" mask="url(#mask-4)" x="0" y="26" width="26" height="8"></rect>
+                    </g>
+                    <polygon id="éclair" fill="#F5A623" transform="translate(29.024370, 17.098384) rotate(-48.000000) translate(-29.024370, -17.098384) " points="23.52437 21.1167575 29.183977 13.512116 29.183977 16.7122067 34.52437 12.5983843 29.0562615 21.5983843 29.0562615 18.2016238"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Quick Pi - Configuration</title>
+    <meta name="description" content="France IOI" />
+    <meta name="author" content="Mathias Hiron" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <span
+        id="menu"
+        class="d-flex menu-handle text-uppercase align-items-center text-white position-fixed f-titillium-b"
+      >
+        <i class="fa fa-bars"></i>
+        <span>Menu</span>
+      </span>
+      <div id="sidenav" class="sidenav">
+        <span id="close-menu" class="d-flex text-uppercase align-items-center text-white f-titillium-b">
+          <i class="fa fa-times"></i>
+          <span>Menu</span>
+        </span>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30" href="index.html">Accueil</a>
+          </li>
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30" href="material.html">Matériel</a>
+          </li>
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30" href="environment.html">Environnement</a>
+          </li>
+          <li class="menu-item">
+            <a class="f-titillium-l f-size__30 active" href="configuration.html">Configuration</a>
+          </li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <div class="row bk-green">
+        <div class="container pl-100 pr-100">
+          <div class="d-flex flex-column material-section">
+            <span class="text-white f-titillium-l f-size__60 text-uppercase">Configuration</span>
+            <span class="text-white f-titillium-l f-size__18">Nous vous proposons un ensemble de tutoriaux pour configurer votre matériel selon votre situation.</span>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center h-100 mt-4"
+            >
+              <img src="assets/images/config.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider white-green">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="divider green-white">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="row">
+        <div class="container pl-100 pr-100">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >1. Installation de la carte micro-SD</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>Sauf si vous achetez <a href="material.html">notre kit</a> livré pré-installé, vous devrez installer le système d'exploitation et les outils sur la carte micro-SD (minimum 8GO) de votre Raspberry Pi.
+                  <p>
+                     Suivez pour cela notre <a href="docs/doc_sd_card.html" target="_blank">tutoriel d'installation</a> de la carte micro-SD.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >2. Connexion Wifi</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>
+                     Pour connecter votre matériel à l'application QuickPi, nous vous conseillons d'utiliser le Wifi.
+                  </p>
+                  <p>
+                     Suivez pour cela notre <a href="docs/doc_configure_wifi.html" target="_blank">tutoriel de configuration Wifi</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >3. Connexion USB</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>
+                     Si vous n'avez pas la possibilité d'utiliser un réseau Wifi, il est possible de configurer certains Raspberry Pi, en particulier le Raspbery Pi Zero WH, pour se connecter à internet au travers d'une connexion USB. Ceci fonctionne sur les systèmes d'exploitation récents, notamment à partir de Windows 7, mais peut nécessiter une installation de drivers.
+                  </p>
+                  <p>
+                     Suivez pour cela notre <a href="docs/doc_connect_usb.html" target="_blank">tutoriel sur la connexion par USB</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >4. Connexion bluetooth</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>
+                     Depuis une tablette, et en particulier un iPad, il est possible de se connecter à votre Raspberry Pi en Bluetooth.
+                  </p>
+                  <p>
+                     Suivez pour cela notre <a href="docs/doc_connect_bluetooth.html" target="_blank">tutoriel sur la connexion par Bluetooth</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >5. Préparation d'un Raspberry Pi</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>
+                     Si vous achetez vos composants séparément, et en particulier votre propre Raspberry Pi, voici quelques explications sur comment les préparer :
+                  </p>
+                  <p>
+                     <a href="docs/doc_hardware_zerow.html" target="_blank">Tutoriel sur la préparation du Raspberry Pi Zero</a>.
+                  </p>
+                  <p>
+                     <a href="docs/doc_hardware_3a.html" target="_blank">Tutoriel sur la préparation du Raspberry Pi 3A+</a>.
+                  </p>
+                  <p>
+                     Notez que si vous choisissez <a href="material.html">notre kit</a>, il est livré déjà monté et installé.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >6. Préparation des LEDs Grove</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>
+                     Si vous achetez vos LEDs Grove, suivez nos <a href="docs/doc_hardware_leds.html" target="_blank">informations sur la préparation des LEDs</a>, pour gagner un peu de temps.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider white-blue d-none d-lg-flex">
+        <div class="divider__inner d-none d-lg-flex"></div>
+      </div>
+      <div class="divider blue-white d-none d-lg-flex">
+        <div class="divider__inner"></div>
+      </div>
+      <div class="row bk-blue d-none d-lg-flex">
+        <div class="container">
+          <div class="d-flex flex-column f-footer">
+            <div class="quick-pi-bottom d-flex align-items-center justify-content-center">
+              <img src="assets/images/QuickPI.svg">
+            </div>
+            <div class="d-flex footer-list">
+              <span class="footer-item">
+                <a class="f-titillium-l f-size__30" href="index.html">Accueil</a>
+              </span>
+              <span class="footer-item">
+                <a class="f-titillium-l f-size__30" href="material.html">Matériel</a>
+              </span>
+              <span class="footer-item">
+                <a class="f-titillium-l f-size__30" href="environment.html">Environnement</a>
+              </span>
+              <span class="footer-item">
+                <a class="f-titillium-l f-size__30 active" href="configuration.html">Configuration</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

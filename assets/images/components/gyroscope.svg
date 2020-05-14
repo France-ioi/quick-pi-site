@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Gyroscope 2</title>
+    <defs>
+        <linearGradient x1="50%" y1="25.5055147%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6BAAF4" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="60" height="60" rx="5"></rect>
+        <filter x="-2.5%" y="-2.5%" width="105.0%" height="110.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.180392157   0 0 0 0 0.368627451   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Gyroscope-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(5.000000, 4.000000)">
+            <g id="BUZZER-Copy">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+            <ellipse id="Oval" stroke="#2E5E95" stroke-width="2" cx="30" cy="30.5" rx="7" ry="24.5"></ellipse>
+            <ellipse id="Oval" stroke="#2E5E95" stroke-width="2" transform="translate(30.000000, 30.500000) rotate(90.000000) translate(-30.000000, -30.500000) " cx="30" cy="30.5" rx="7" ry="24.5"></ellipse>
+            <circle id="Oval" stroke="#2E5E95" stroke-width="2" transform="translate(30.000000, 30.000000) rotate(90.000000) translate(-30.000000, -30.000000) " cx="30" cy="30" r="24.5"></circle>
+            <circle id="Oval" stroke="#2E5E95" stroke-width="2" fill="#F5A623" cx="23" cy="22" r="5"></circle>
+            <circle id="Oval-Copy" stroke="#2E5E95" stroke-width="2" fill="#F5A623" cx="41" cy="36" r="5"></circle>
+            <circle id="Oval-Copy-2" stroke="#2E5E95" stroke-width="2" fill="#F5A623" cx="47" cy="14" r="5"></circle>
+        </g>
+    </g>
+</svg>
