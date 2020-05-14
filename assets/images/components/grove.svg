@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Port grove</title>
+    <defs>
+        <linearGradient x1="50%" y1="44.950126%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="21" width="57" height="27" rx="2"></rect>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="44.950126%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M6,24 L6,6 L51,6 L51,24 L42,24 L42,30 L15,30 L15,24 L6,24 Z" id="path-5"></path>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-7">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12.5,12 L14.5,12 C14.7761424,12 15,12.2238576 15,12.5 L15,21 L15,21 L12,21 L12,12.5 C12,12.2238576 12.2238576,12 12.5,12 Z" id="path-8"></path>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="122.2%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M18.5,12 L20.5,12 C20.7761424,12 21,12.2238576 21,12.5 L21,21 L21,21 L18,21 L18,12.5 C18,12.2238576 18.2238576,12 18.5,12 Z" id="path-10"></path>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="122.2%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M24.5,12 L26.5,12 C26.7761424,12 27,12.2238576 27,12.5 L27,21 L27,21 L24,21 L24,12.5 C24,12.2238576 24.2238576,12 24.5,12 Z" id="path-12"></path>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="122.2%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M30.5,12 L32.5,12 C32.7761424,12 33,12.2238576 33,12.5 L33,21 L33,21 L30,21 L30,12.5 C30,12.2238576 30.2238576,12 30.5,12 Z" id="path-14"></path>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="122.2%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M36.5,12 L38.5,12 C38.7761424,12 39,12.2238576 39,12.5 L39,21 L39,21 L36,21 L36,12.5 C36,12.2238576 36.2238576,12 36.5,12 Z" id="path-16"></path>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="122.2%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M42.5,12 L44.5,12 C44.7761424,12 45,12.2238576 45,12.5 L45,21 L45,21 L42,21 L42,12.5 C42,12.2238576 42.2238576,12 42.5,12 Z" id="path-18"></path>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="122.2%" filterUnits="objectBoundingBox" id="filter-19">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Port-grove" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10-Copy-4" transform="translate(7.000000, 11.000000)">
+            <g id="Rectangle-Copy-6">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="#E0E1E7" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill-opacity="0.3" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="57" height="30" rx="1"></rect>
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                <use fill="#E0E1E7" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <use fill-opacity="0.3" fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+            </g>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
+            </g>
+            <g id="Rectangle-Copy-8">
+                <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-10"></use>
+            </g>
+            <g id="Rectangle-Copy-9">
+                <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-12"></use>
+            </g>
+            <g id="Rectangle-Copy-10">
+                <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-14"></use>
+            </g>
+            <g id="Rectangle-Copy-11">
+                <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-16"></use>
+            </g>
+            <g id="Rectangle-Copy-12">
+                <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-18"></use>
+            </g>
+        </g>
+    </g>
+</svg>

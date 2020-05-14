@@ -56,7 +56,7 @@ const mag_pos_ary = [
       "Il vous permettra de déclencher une action simple, et pourra être utilisé en combinaison avec la manette pour naviguer dans des menus, ou programmer de petis jeux.",
   },
   {
-    file: "grove.png",
+    file: "grove.svg",
     left: "30%",
     top: "60%",
     title: "Les 4 ports d'extension Grove",
