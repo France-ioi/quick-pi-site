@@ -81,10 +81,36 @@
             <div class="col-12">
               <div class="d-flex flex-column">
                 <span class="f-titillium-l f-size__30 t-blue config-title"
-                  >1. Installation de la carte micro-SD</span
+                  >1. Préparation d'un Raspberry Pi</span
                 >
                 <div class="f-titillium-l f-size__18 t-black config-desc">
-                  <p>Sauf si vous achetez <a href="material.html">notre kit</a> livré pré-installé, vous devrez installer le système d'exploitation et les outils sur la carte micro-SD (minimum 8GO) de votre Raspberry Pi.
+                  <p>
+                     Attention : passez directement à l'étape 3 si vous avez acheté <a href="material.html">notre kit</a>, il est livré déjà monté et installé.
+                  </p>
+                  <p>
+                     Si au contraire vous achetez vos composants séparément, et en particulier votre propre Raspberry Pi, voici quelques explications sur comment les préparer :
+                  </p>
+                  <p>
+                     <a href="docs/doc_hardware_zerow.html" target="_blank">Tutoriel sur la préparation du Raspberry Pi Zero</a>.
+                  </p>
+                  <p>
+                     <a href="docs/doc_hardware_3a.html" target="_blank">Tutoriel sur la préparation du Raspberry Pi 3A+</a>.
+                  </p>
+                  <p>
+                     Si vous achetez vos LEDs Grove, suivez nos <a href="docs/doc_hardware_leds.html" target="_blank">informations sur la préparation des LEDs</a>, pour gagner un peu de temps.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex flex-column">
+                <span class="f-titillium-l f-size__30 t-blue config-title"
+                  >2. Installation de la carte micro-SD</span
+                >
+                <div class="f-titillium-l f-size__18 t-black config-desc">
+                  <p>Attention : ignorez cette étape si vous avez acheté <a href="material.html">notre kit</a>, il est déjà installé.
+                  </p>
+                  <p>Sinon, vous devez installer le système d'exploitation et les outils sur la carte micro-SD (minimum 8GO) de votre Raspberry Pi.
                   <p>
                      Suivez pour cela notre <a href="docs/doc_sd_card.html" target="_blank">tutoriel d'installation</a> de la carte micro-SD.
                   </p>
@@ -94,14 +120,14 @@
             <div class="col-12">
               <div class="d-flex flex-column">
                 <span class="f-titillium-l f-size__30 t-blue config-title"
-                  >2. Connexion Wifi</span
+                  >3. Carte QuickPi : navigation dans le menu et test</span
                 >
                 <div class="f-titillium-l f-size__18 t-black config-desc">
                   <p>
-                     Pour connecter votre matériel à l'application QuickPi, nous vous conseillons d'utiliser le Wifi.
+                     Si vous disposez de la carte QuickPi ou de notre Kit complet, vous pouvez commencer par découvrir comment <a href="docs/doc_board_and_menu.html" target="_blank">naviguer dans son menu et lancer l'autotest</a>, qui vérifie que l'ensemble des capteurs et actionneurs fonctionnent.
                   </p>
                   <p>
-                     Suivez pour cela notre <a href="docs/doc_configure_wifi.html" target="_blank">tutoriel de configuration Wifi</a>.
+                     Si vous n'avez pas de carte QuickPi, passez à l'étape suivante.
                   </p>
                 </div>
               </div>
@@ -109,14 +135,14 @@
             <div class="col-12">
               <div class="d-flex flex-column">
                 <span class="f-titillium-l f-size__30 t-blue config-title"
-                  >3. Connexion USB</span
+                  >4. Configuration de la connexion</span
                 >
                 <div class="f-titillium-l f-size__18 t-black config-desc">
                   <p>
-                     Si vous n'avez pas la possibilité d'utiliser un réseau Wifi, il est possible de configurer certains Raspberry Pi, en particulier le Raspbery Pi Zero WH, pour se connecter à internet au travers d'une connexion USB. Ceci fonctionne sur les systèmes d'exploitation récents, notamment à partir de Windows 7, mais peut nécessiter une installation de drivers.
+                     Une fois votre matériel prêt, l'étape suivante est de configurer la ou les manières dont vous allez connecter votre Raspberry Pi à votre ordinateur, votre réseau Wifi, et si possible à Internet.
                   </p>
                   <p>
-                     Suivez pour cela notre <a href="docs/doc_connect_usb.html" target="_blank">tutoriel sur la connexion par USB</a>.
+                     Suivez pour cela notre <a href="docs/doc_configure_network.html" target="_blank">tutoriel de configuration</a>.
                   </p>
                 </div>
               </div>
@@ -124,47 +150,14 @@
             <div class="col-12">
               <div class="d-flex flex-column">
                 <span class="f-titillium-l f-size__30 t-blue config-title"
-                  >4. Connexion bluetooth</span
+                  >5. Environnement de programmation</span
                 >
                 <div class="f-titillium-l f-size__18 t-black config-desc">
                   <p>
-                     Depuis une tablette, et en particulier un iPad, il est possible de se connecter à votre Raspberry Pi en Bluetooth.
+                     Vous pouvez ensuite charger <a href="environment.html">l'environnement de programmation</a> à votre Raspberry Pi.
                   </p>
                   <p>
-                     Suivez pour cela notre <a href="docs/doc_connect_bluetooth.html" target="_blank">tutoriel sur la connexion par Bluetooth</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="d-flex flex-column">
-                <span class="f-titillium-l f-size__30 t-blue config-title"
-                  >5. Préparation d'un Raspberry Pi</span
-                >
-                <div class="f-titillium-l f-size__18 t-black config-desc">
-                  <p>
-                     Si vous achetez vos composants séparément, et en particulier votre propre Raspberry Pi, voici quelques explications sur comment les préparer :
-                  </p>
-                  <p>
-                     <a href="docs/doc_hardware_zerow.html" target="_blank">Tutoriel sur la préparation du Raspberry Pi Zero</a>.
-                  </p>
-                  <p>
-                     <a href="docs/doc_hardware_3a.html" target="_blank">Tutoriel sur la préparation du Raspberry Pi 3A+</a>.
-                  </p>
-                  <p>
-                     Notez que si vous choisissez <a href="material.html">notre kit</a>, il est livré déjà monté et installé.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="d-flex flex-column">
-                <span class="f-titillium-l f-size__30 t-blue config-title"
-                  >6. Préparation des LEDs Grove</span
-                >
-                <div class="f-titillium-l f-size__18 t-black config-desc">
-                  <p>
-                     Si vous achetez vos LEDs Grove, suivez nos <a href="docs/doc_hardware_leds.html" target="_blank">informations sur la préparation des LEDs</a>, pour gagner un peu de temps.
+                     Depuis cet environnement, vous pourrez vous connecter au Raspberry Pi pour y exécuter vos programmes. Suivez pour cela le <a href="docs/doc_connect_interface.html" target="_blank">tutoriel de connexion.</a>
                   </p>
                 </div>
               </div>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="max-width: 800px;margin:auto">
+   <h1>Accès à la page de configuration</h1>
+   <p>
+      Il y a principalement trois manières de configurer votre Raspberry Pi :
+      <ul>
+         <li>En connectant votre ordinateur ou mobile à un point d'accès wifi créé par le Raspberry Pi.</li>
+         <li>En branchant votre Raspberry Pi à votre ordinateur par un cable USB.</li>
+         <li>En modifiant un fichier de configuration directement sur la carte micro-SD.</li>
+      </ul>
+      Nous présentons ci-dessous les trois possibilités.
+   </p>
+   <h2>Connexion par point d'accès Wifi</h2>
+   <p>
+      La connexion par point d'accès Wifi n'est accessible que si vous disposez de notre Kit ou de la carte QuickPi, car elle se fait via le menu intégré.
+   </p>
+   <p>
+      Dans le sous-menu configuration, activez l'acton "Start access point".
+   </p>
+   <p>
+      Un point d'accès Wifi est alors créé par le Raspberry Pi. Son nom est affiché à l'écran. Le mot de passe est "France-ioi" si vous ne l'avez jamais modifié vous mêmes.
+   </p>
+   <p>
+      Depuis votre ordinateur, tablette ou mobile, vous pouvez après quelques instants, visualisez le point d'accès wifi ansi créé, dans la liste des réseaux Wifi disponibles.
+   </p>
+   <p>
+      Sélectionnez-le et entrez le mot de passe "France-ioi". Vous êtes alors automatiquement redirigés vers un portail captif, qui présente l'interface web de configuration de votre kit (voir plus bas).
+   </p>
+   <p>
+      Lorsque vous êtes connecté à ce point d'accès, l'adresse IP du Raspberry Pi est 192.168.233.3. C'est cette IP qui est chargée automatiquement dans le navigateur par le portail captif.
+   </p>
+   <h2>Connexion par USB</h2>
+   <p>
+      Si pour une raison ou une autre vous ne pouvez pas passer par le point d'accès wifi. Il est possible de se connecter par USB, grâce au système de "Ethernet par USB" qui est préconfiguré sur le Raspberry Pi
+      du kit, et sur l'image d'OS que nous fournissons.
+   </p>
+   <p>
+      Branchez bien votre cable USB sur le port de données du Raspberry Pi, qui est celui qui se trouve le plus proche du centre. Celui situé vers l'extérieur ne peut servir qu'à l'alimentation.
+   </p>
+   <p>
+      Saisissez alors l'adresse IP 192.168.233.1 dans votre navigateur, l'interface de configuration devrait alors s'afficher.
+   </p>
+   <p>
+      Si rien ne s'affiche, même rechargeant la page un peu plus tard, c'est que votre ordinateur n'est pas configuré pour gérer l'ethernet par USB. Un driver doit être installé. TODO: link to page explaining how to install it on various OSes.
+   </p>
+   <p>
+      Notez que si vous avez accès au menu via la carte QuickPi, vous pouvez vérifier si la connexion Ethernet par USB fonctionne, en allant dans le menu du Raspberry : Configuration -> Show IP Address.
+   </p>
+   <h2>Éditer directement la configuration</h2>
+   <p>
+      Si vous ne parvenez pas à utiliser le point d'accès ni à faire fonctionner l'Ethernet par USB depuis votre ordinateur, vous pouvez effectuer la configuration en éditant le fichier depuis la carte micro-SD. Les explications sont données un peu plus bas dans ce document.
+   </p>
+   
+   
+   <h1>Interface de configuration</h1>
+   <p>
+      L'interface de configuration est accessible depuis votre ordinateur, que le Raspberry Pi soit connecté par USB, point d'accès wifi, ou via votre réseau wifi ou ethernet si la configuration de votre réseau le permet, simplement en mettant son adresse IP dans le navigateur.
+   </p>
+   <center><img src="images/config_page.png" style="border: solid black 1px;width:400px"></center>
+   <p>
+   <h2>Onglet configuration</h2>
+   
+   <h3>Choisir des identifiants</h3>
+   <p>
+      Commencez par choisir un identifiant pour votre établissement. Il doit s'agir d'un texte plutôt court, facile à retenir mais unique. Choisissez aussi un petit nom pour l'appareil lui-même. Vous pouvez par exemple les numéroter si vous en avez plusieurs.
+   </p>
+   <h3>Configurez l'accès à votre réseau Wifi</h3>
+   <p>
+      Si vous n'avez pas de réseau wifi ou ne pouvez vous y connecter, consulter la section "Que faire en l'absence de réseau Wifi ?" en bas de ce document.
+   </p>
+   <p>
+      Pour connecter le Raspberry Pi à votre réseau Wifi, vous devez indiquer le SSID, c'est à dire le nom du réseau et le mot de passe de ce réseau. Le bouton SCAN à droite du champ SSID permet de détecter automatiquement les noms des réseaux visibles, pour vous permettre de choisir le votre dans la liste qui apparaît alors.
+   </p>
+   <h3>Utiliser une adresse IP Statique</h3>
+   <p>
+      Cette section s'applique au cas d'une connexion Wifi, mais également si vous avez utilisé un adapatateur Ethernet.
+   </p>
+   <p>
+      La plupart des réseaux attribuent automatiquement les addresses IP aux machines connectées, via le protocole DHCP. C'est le cas de la plupart des réseaux wifi, en particulier celui que vous avez probablement à la maison.
+   </p>
+   <p>
+      Si vous n'êtes pas dans ce cas, ce qui est plus probable dans un
+      établissement scolaire, l'accès est restreint à certaines adresses IP voire à certains appareils, via leur adresse MAC. L'administrateur système doit alors attribuer une adresse IP au Raspberry PI, et/ou autoriser l'accès à son adresse MAC.
+   </p>
+   <p>
+      Une fois que vous aurez attribué une adresse IP fixe à votre Raspberry Pi, vous pourrez cocher la case "Static IP configuration" et fournir en dessous l'adresse IP, le masque de sous-réseau, l'IP du serveur DNS, et l'IP de la passerelle (gateway) par défaut de votre réseau, fournies par votre administrateur réseau.
+   </p>
+   <p>
+      TODO: procedure pour obtenir l'adresse MAC (en préparation)
+   </p>
+   <h3>Configuration d'un Proxy</h3>
+   <p>
+      Si votre accès à internet nécessite de passer par un proxy, vous pouvez le configurer juste en dessous.
+   </p>
+   <p>
+      Vous pouvez fournir l'adresse IP et le port du Proxy, et le cas échéant, fournir l'utilisateur et le mot de passe.
+   </p>
+   <h3>Activation du Bluetooth</h3>
+   <p>
+      Vous pouvez ensuite choisir d'activer ou non la connexion par bluetooth. Laissez la désactivée si vous ne prévoyez pas de l'utiliser.
+   </p>
+   <h3>Connexion via les serveurs France-ioi</h3>
+   <p>
+      Certains réseaux sont configurés pour bloquer la connexion directe entre plusieurs machines de ce réseau. C'est souvent le cas dans les établissements scolaires.
+   </p>
+   <p>
+      Pour ces situations, nous avons mis en place un système de tunnel http. Le principe est que votre navigateur et le Raspberry passent par les serveurs de France-ioi pour communiquer entre eux. Bien sûr ceci ne fonctionne que si un accès internet est disponible.
+   </p>
+   <p>
+      Si vous êtes dans ce cas, et uniquement dans ce cas, cochez la case "Connect through France-ioi servers". Dans le doute, vérifiez d'abord si cela fonctionne sans.
+   </p>
+   <h3>Enregistrement et redémarrage</h3>
+   <p>
+      Lorsque vous enregistrez la configuration, l'interface vous indique que le Raspberry Pi va redémarrer. Il doit en effet redémarrer pour pouvoir tenir compte de la nouvelle configuration.
+   </p>
+   <p>
+      Allumez le Raspberry, et attendez une petite minute pour être sûr qu'il a bien démarré.
+   </p>
+   <p>
+      Si vous disposez de notre Kit ou simplement de la carte QuickPi, vous pouvez vérifier que la connexion fonctionne de deux manières.
+   </p>
+   <p>
+      Allez dans le menu Configuration -> Show IP Address. Vérifiez que la liste contient une ligne wifi, et obtenez ainsi l'adresse IP Wifi de votre Raspberry Pi, et par exemple la mettre dans votre navigateur pour vérifier qu'elle donne accès à l'interface de configuration.
+   </p>
+   <p>
+      Vous pouvez aussi tester la procédure de mise à jour, c'est le bon moment pour vous assurer que vous avez bien la dernière versio. Allez pour cela dans le menu Configuration -> Check for updates.
+   </p>
+   <p>
+      <strong>Si vous ne disposez pas de notre carte QuickPi</strong>, vous pouvez vérifier le statut de connexion de votre Raspberry Pi depuis l'environnement de programmation. Dans l'onglet Wifi de cet environnement, indiquez l'identifiant choisi pour votre établissement, puis cherchez dans la liste qui apparaît, le nom que vous avez attribué à votre Raspberry Pi. S'il y est, c'est qu'il a bien accès au Wifi, et vous pouvez alors le sélectionner et obtenir son adresse IP.
+   </p>
+   <p>
+      Si cela ne fonctionne pas, recommencez la procédure, et vérifiez bien les paramètres de votre configuration, votre SSID, mot de passe, etc.
+   </p>
+
+   <h2>Onglet diagnostics</h2>
+   <p>
+      Cet onglet permet de récupérer le contenu de fichiers de logs sur le Raspberry Pi, qui peuvent servir pour diagnostiquer certains soucis potentiels, en particulier côté réseau. Il est plutôt fait pour les initiés à linux.
+   </p>
+   <h2>Onglet update</h2>
+   <p>
+      Cet onglet permet de mettre à jour le logiciel du raspberry Pi avec la dernière version.
+   </p>
+   <p>
+      Si votre Raspberry Pi est connecté à internet, notamment une fois le wifi configuré, la mise à jour peut se faire directement via le menu de la carte. Par contre lorsque votre Raspberry est connecté par USB, ou par le point d'accès il n'a pas accès à internet et ne peut donc pas se mettre lui-même à jour. Vous devez donc passer par cette interface.
+   </p>
+   <p>
+      Si vous êtes connecté au Raspberry Pi via usb ou via votre réseau wifi, votre machine peut avoir internet en même temps, êtes a la fois pouvez simplement cliquer sur "Check for update now". 
+   </p>
+   <p>
+      Il est aussi possible de télécharger la dernière mise à jour lorsque vous êtes connecté à internet, et de la fournir pour mettre à jour le Raspberry Pi, dans le cas où vous êtes connecté à celui-ci, par son point d'accès, donc n'avez pas internet en même temps.
+   </p>
+   <p>
+      Il est important de mettre régulièrement à jour votre Raspberry Pi.
+   </p>
+   <h2>Onglet programmation</h2>
+   <p>
+      La page de configuration du Raspberry Pi du kit contient, accessible depuis son onglet "Programmation", l'environnement de programmation en mode projet libre, disponible dans chacun des trois langages Scratch, Blockly et Python. Vous pouvez donc directement le programmer via les liens fournis dans cet onglet.
+   </p>
+   <p>
+      Pour accéder aux parcours d'exercices, allez par contre sur <a href=" https://quick-pi.org" target="_blank">quick-pi.org</a>.
+   </p>
+   <h1>Éditer le fichier de configuration directement</h1>
+   <p>
+      Si vous ne pouvez pas vous connecter au Raspberry Pi via le point d'accès Wifi (par exemple parce-que vous n'avez pas la carte QuickPi pour y accéder), et que la connexion par USB ne fonctionne pas, il reste une possibilité pour configurer votre Raspberry Pi&nbsp;: éditer directement le fichier de configuration qui se trouve sur la carte micro-SD.
+   </p>
+   <p>
+      Branchez votre carte micro-SD sur un ordinateur, grâce à un adaptateur vers une carte SD ou un port USB.
+   </p>
+   <img src="images/microsd_adapter.png" style="width:200px"/>
+   <p>
+      Refermez les éventuels messages d'alerte vous disant que la carte a un problème ou qu'elle doit être formatée. Ces messages sont à ignorer.
+   </p>
+   <p>
+      Depuis votre explorateur, accéder au lecteur qui correspond à la carte que vous venez de brancher. Il s'appellera probablement <code>boot</code>
+   </p>
+   <img src="images/sdcard_files.png" style="width:500px"/> 
+   <p>
+      Ouvrez le fichier <code>quickpi.txt</code> dans un éditeur de texte. La première fois, son contenu ressemblera à ceci :
+   </p>
+   <pre>
+SSID=wifinetworkname
+PASSWORD=wifipassword
+STATICNETWORK=0
+STATICIPADDR=192.168.1.31
+STATICGATEWAY=192.168.1.1
+STATICDNS=8.8.8.8
+
+ENABLEBLUETOOTH=0
+
+NAME=quickpi1
+SCHOOL=schoolkey
+   </pre>
+   <h2>Édition de la configuration du Wifi</h2>
+   <h3>1) Renseignez le SSID</h3>
+   <p>
+      Mettez le SSID de votre réseau juste apès "SSID=". Par exemple s'il s'agit de "MonReseau", la ligne doit devenir :
+   </p>
+   <pre>SSID=MonReseau</pre>
+   <h3>2) Renseignez le mot de passe</h3>
+   <p>
+      Mettez le mot de passe de votre réseau juste après "PASSWORD=". Par exemple s'il s'agit de "MonMotDePasse", la ligne doit devenir :
+   </p>
+   <pre>PASSWORD=MonMotDePasse</pre>
+   <h3>3) Indiquez le type de réseau</h3>
+   <p>Après "STATICNETWORK=", mettez un 0 si les adresses IP sur ce réseau sont attribuées dynamiquement, et un 0 sinon.</p>
+   <h3>4) Si c'est un réseau statique uniquement</h3>
+   <p>Indiquez l'adresse IP attribuée au Raspberry Pi après "STATICIPADDR=".</p>
+   <p>Indiquez l'adresse IP de la passerelle (Gateway) après "STATICGATEWAY=".</p>
+   <p>Indiquez l'adresse IP du DNS après "STATICDNS=".</p>
+   <h3>5) Choisisez un nom pour votre Raspberry</h3>
+   <p>Attribuez un nom à chacun des Raspberry que vous utiliserez sur le même réseau. Utilisez des lettres minuscules non accentuées et des chiffres, mais pas d'espaces. Une fois un nom choisi, collez une étiquette avec ce nom sur le Raspberry.</p>
+   <p>Renseignez ce nom après "NAME=" dans la configuration.</p>
+   <h3>6) Choissez un nom pour l'établissement</h3>
+   <p>Attribuer un nom à votre établissement, qui sera commun à tous les Raspberry Pi que vous connecterez sur le même réseau. Utilisez des lettres minuscules non accentuées et des chiffres, mais pas d'espaces. Vous pouvez aussi l'ajouter sur l'étiquette.</p>
+   <p>Renseignez ce nom après "SCHOOL=" dans la configuration.</p>
+   
+   <h2>Enregistrez et éjectez</h3>
+   <p>
+      Après avoir modifié le fichier de configuration, enregistrez le, et éjectez proprement la carte micro-sd de votre ordinateur (comme avant d'éjecter une clé USB).
+   </p>
+   <img src="images/sdcard_eject.png" style="width:200px"/>
+   <p>
+      Replacez alors la carte SD dans le Raspberry PI alors qu'il est éteint, puis rallumez-le.
+   </p>
+
+   <h1>Que faire en l'absence de réseau Wifi ?</h1>
+      <p>
+      Si vous n'avez pas de réseau Wifi ou êtes dans l'impossibilité de connecter votre Raspberry Pi à ce réseau du fait de restrictions,
+      vous disposez de plusieurs possibilités :
+
+      <h3>Connexion par un adaptateur Ethernet</h3>
+      
+      <p>Vous pouvez connecter votre Raspberry Pi à un réseau filaire Ethernet, grâce à un <a href="https://www.amazon.fr/gp/product/B073GTL975/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" target="_blank">adaptateur micro-usb vers Ethernet.</a></p>
+      <center><img src="images/adaptateur_ethernet.jpg" style="width:200px" /></center>
+      <p>Nous n'avons pas encore testé nous-mêmes la compatibilité de ce matériel, mais nous allons le faire très bientôt.</p>
+      
+      <h3>En créant votre propre point d'accès Wifi</h3>
+
+      <p>Si vous avez un réseau filaire Ethernet auquel vous pouvez vous connecter, vous pouvez créer votre propre point d'accès Wifi, en achetant un appareil que comme point d'accès bon marché TL-MR3020, que nous avons validé pour cet usage.
+      </p>
+      <center><img src="images/access_point.png" style="width:250px"></center>
+      <p>
+      Branchez ce boîtier à une source de courant, placez le bouton sélecteur sur la position <b>AP</b> et connectez-le à votre réseau avec le câble fourni.
+      </p>
+      <p>
+      Un réseau wifi sera créé, dont le nom (SSID) et le mot de passe (KEY) sont imprimés sur le côté du boîtier, ou fournis dans la documentation de celui-ci.
+      </p>
+   
+      <h3>Connexion par USB</h3>
+      <p>Vous pouvez connecter votre Raspberry Pi à votre ordinateur par USB comme expliqué plus haut.
+      </p>
+      <p>Vous pourrez alors programmer votre Raspberry Pi depuis votre navigateur, mais vos programmes ne pourront pas se connecter à internet.</p>
+
+      <h3>Connexion au point d'accès Wifi du Raspberry Pi</h3>
+      <p>
+      Vous pouvez programmer votre Raspberry Pi directement en vous connectant à son point d'accès Wifi, comme expliqué plus haut pour l'accès à la page de configuration.
+      </p>
+      <p>
+      Vous n'aurez cependant plus internet pendant que vous programmez votre Raspberry Pi, et n'aurez pas accès aux parcours d'exercices en ligne.
+      </p>
+
+      <h3>Connexion par Bluetooth</h3>
+      
+      <p>Nous ajouterons prochainement une documentation sur la manière dont vous pouvez vous connecter au Raspberry Pi en Bluetooth.
+   
+

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="max-width: 800px;margin:auto">
+   <h1>Démarrage et prise en main du kit</h1>
+   <p>
+      Branchez votre kit sur un port USB pour l'alimenter, puis attendez que l'écran s'allume.
+   </p>
+   <p>
+      Après un écran d'accueil, un menu apparaît :
+      <center><img src="images/menu_configuration.jpg"></center>
+   </p>
+   <p>
+      La ligne du haut indique dans quel menu vous vous trouvez, tandis que la ligne du bas indique le sous-menu dans lequel vous pouvez rentrer, ou l'action que vous pouvez effectuer.
+   </p>
+   <p>
+      Vous pouvez naviguer dans ce menu avec la manette (à gauche) et le bouton poussoir (à droite) :
+      <ul>
+         <li>directions haut et bas pour faire défiler le menu</li>
+         <li>bouton poussoir pour rentrer dans un menu ou activer l'action sélectionnée.</li>
+         <li>direction gauche pour sortir d'un sous-menu</li>
+      </ul>
+   </p>
+   <p>
+      Le contenu des menus peut varier selon la version du logicielle. Vous devrez connecter votre kit à internet (voir plus bas) avant de pouvoir le mettre à jour avec la toute dernière version.
+   </p>
+   <h1>Tester les capteurs et actionneurs</h1>
+   <p>
+      Pour vérifier que tous les capteurs et actionneurs de votre carte fonctionne, vous pouvez sélectionner, dans le menu principal, le sous-menu "Board test".
+   </p>
+   <p>
+      Dans le sous-menu "Board test", activer l'action "Press to run".
+   </p>
+   <p>
+      La première étape vous demande "Press all buttons". Vous devez alors appuyer une fois sur le bouton poussoir, puis une fois sur chacune des 5 directions de la manette : haut, bas, droite, gauche et centre. Au fur et à mesure où vous appuyez, les petits carrés correspondants se remplissent.
+   </p>
+   <p>
+      Après quelques tests très rapide automatiques, la carte se met à faire des bips avec le buzzer, puis affiche "Put board face down".
+      Vous devez alors retourner le kit et le placer écran bien à plat
+      sur une surface horizontale, par exemple une table.
+   </p>
+   <p>
+      La carte vérifie alors qu'elle détecte le retournement avec l'accéléromètre, le gyroscope et le magnétomètre, qu'il y a un obstacle très proche détecté par le capteur de distance, puis
+      elle allume chacune des trois LEDs Rouge, Verte et Bleue, et
+      détecte le changement de luminosité.
+   </p>
+   <p>
+      Elle se remet alors à sonner pour vous demander de la retourner,
+      avec également un message "Put board face up". En un seul mouvement,
+      retournez le kit, posé sur la surface horizontale, écran vers le
+      plafond. Ne vous placez pas juste au dessus, la carte va vérifier
+      qu'elle détecte le retournement, puis vérifier que le capteur de
+      distance ne détecte pas d'obstruction.
+   </p>
+   <p>
+      Si tout s'est bien passé et que tous les composants fonctionnent,
+      un message "ALL TESTS PASSED" s'affiche alors.
+   </p>
+   <p>
+      Il peut arriver occasionnellement que certains tests ne passent pas,
+      selon la manière dont vous l'avez retourné, par exemple. N'hésitez pas à essayer plusieurs fois si besoin.
+   </p>
+ 

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="max-width:800px;margin:auto">
+   <h1>Connecter l'environnement de programmation</h1>
+
+   <p>
+      Dans l'environnement de programmation, vous disposez d'un bouton "Connect", pour établir la connexion entre l'environnement et le Raspberry Pi.
+   </p>
+   <center><img src="images/connect.png" style="width:150px"/></center>
+   <p>
+      L'interface qui apparaît propose alors quatre possibilités que nous allons détailler :
+   </p>
+   <ul>
+      <li>Connexion par Wifi</li>
+      <li>Connexion par USB</li>
+      <li>Connexion par Bluetooth</li>
+      <li>Connexion locale</li>
+   </ul>
+
+   <h2>Connecter son Raspberry par Wifi</h1>
+   <p>
+   La connexion par Wifi demande plusieurs étapes, et peut nécessiter une intervention d'un administrateur du réseau. C'est cependant celle que nous recommendons lorsqu'elle est possible, car cela fait du Raspberry Pi un véritable objet connecté, indépendant de l'ordinateur utilisé pour le programmer.
+   </p>
+   <p>Commencez par suivre le <a href="doc_configure_network.html">tutoriel de configuration</a> si vous ne l'avez pas déjà fait, pour connecter votre Raspberry Pi à votre réseau Wifi.</p>
+   <p>
+   Sélectionnez l'onglet Wifi dans la fenêtre de gestion de la connexion.
+   </p>
+   <img src="images/connect_wifi.png" style="width:500px"/>
+   </p>
+   <p>
+      Dans le premier champ de saisie, entrez le nom choisi pour votre établissement.
+   </p>
+   <p>
+      Cliquez alors sur "GET LIST", pour charger la liste des noms de Raspberry Pi connus pour cet établissement.
+   </p>
+   <p>
+      Sélectionnez le nom de votre Raspberry. Son adresse IP apparaît alors.
+   </p>
+   <p>
+      Cliquez alors sur "Connecter l'appareil". Après quelques instants, le bouton "Connecter" de l'interface se réduit et un bouton "Installer" apparaît., 
+   </p>
+   <img src="images/connected.png" style="width:250px"/>
+   <p>
+   Cela signifie que le Raspberry Pi est bien connecté, et que vous pouvez interagir avec.
+   </p>
+
+   <h2>Connexion par USB</h2>
+   <p>
+   Cette option est la manière la plus simple de connecter le Raspberry à un PC, et devrait fonctionner sur tout ordinateur disposant d’un système d’exploitation relativement récent. En particulier, cela devrait fonctionner sous windows à partir de Windows Vista (sorti en 2007).
+   </p>
+   <p>
+   Elle a cependant l'inconvénient que le Raspberry Pi n'a alors pas accès à internet.
+   </p>
+   <p>
+   Branchez simplement le Raspberry Pi sur le port USB d’un PC à l’aide d’un câble USB vers micro-USB data (attention, les câbles très bon marché ne permettent parfois que l’alimentation, et non la transmission des données). 
+   </p>
+   <p>
+   Sélectionnez l'onglet USB dans la fenêtre de gestion de la connexion de l'environnement de programmation.
+   </p>
+   <p>
+   QuickPi détecte le Raspberry Pi, et le bouton "Connecter l'appareil" devient bleu.
+   </p>
+   <img src="images/connect_usb.png" style="width:500px"/>
+   </p>
+   
+   </p>
+   Cliquez alors sur "Connecter l'appareil". Après quelques instants, le bouton "Connecter" de l'interface se réduit et un bouton "Installer" apparaît., 
+   </p>
+   <img src="images/connected.png" style="width:250px"/>
+   <p>
+   Cela signifie que le Raspberry Pi est bien connecté, et que vous pouvez interagir avec.
+   </p>
+
+   <h2>Connecter son Raspberry par Bluetooth</h2>
+   <p>
+      Il est possible de connecter son Raspberry en Bluetooth, en particulier pour le programmer depuis une tablette.
+   </p>
+   <p>
+      La procédure n'est pas encore documentée. Cela fonctionne assez directement sur iPad. Sur Android, pour le moment la connexion fonctionne mais bloque l'accès à internet de la tablette. Sur PC, la procédure est un peu plus compliquée, mais sera prochainement documentée.
+   </p>
+
+   <h2>Connexion locale</h2>
+   <p>
+      Si vous chargez l'environnement de programmation directement depuis un Raspberry Pi, vous pouvez utiliser ce dernier onglet pour établir la connexion.
+   </p>
