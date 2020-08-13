@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="max-width:800px;margin:auto">
+   <h1>Connexion Bluetooth depuis Windows</h1>
+      <p>
+      Pour pouvoir vous connecter par Bluetooth à votre Raspberry Pi, commencez par activer cette possibilité depuis la page de configuration de celui-ci (voir plus haut). Une fois que c'est fait, le fonctionnement dépend de votre appareil.
+      </p>
+      <p>
+      Vous devez ensuite appairer votre RaspberryPi avec votre PC, puis configurer le Raspberry comme un point d'accès. Nous présentons les étapes ci-dessous, testées sous Windows 10.
+      <p>
+      Commencez par cliquez sur l'icone bleue bluetooth pour accéder au menu :
+      </p>
+      <center><img src="images/bluetooth_windows1.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Choisissez d'ajouter un appareil Bluetooth. L'écran suivant s'affiche :
+      </p>
+      <center><img src="images/bluetooth_windows2.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Cliquez alors sur le bouton + gris. Une fenêtre s'affiche :
+      </p>
+      <center><img src="images/bluetooth_windows3.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Cliquez sur Bluetooth. Vous devriez voir apparaître quickpi1, ou le nom que vous avez donné à votre Raspberry Pi :
+      </p>
+      <center><img src="images/bluetooth_windows4.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Cliquez dessus, au bout d'un moment il est indiqué comme appairé :
+      </p>
+      <center><img src="images/bluetooth_windows5.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Cliquez alors sur Terminé, la fenêtre se referme, et vous voyez le Raspberry apparaître dans la liste des appareils Bluetooth connectés :
+      </p>
+      <center><img src="images/bluetooth_windows6.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Fermez la fenêtre, puis reparter de l'icone Bluetooth bleue, et choisissez "Rejoindre un réseau personnel".
+      </p>
+      <center><img src="images/bluetooth_windows7.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Le panneau de configuration s'ouvre alors comme suit, et vous voyez votre Raspberry Pi :
+      </p>
+      <center><img src="images/bluetooth_windows8.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Faites alors un clic droit dessus, pour faire apparaître le menu suivant :
+      </p>
+      <center><img src="images/bluetooth_windows9.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Sélectionnez "Se connecter via un point d'accès". Au bout d'un moment, un message indique que c'est réussi.
+      </p>
+      <center><img src="images/bluetooth_windows10.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Dans un navigateur, vous pouvez alors vérifier que cela fonctionne, en chargeant l'adresse 192.168.233.2 :
+      </p>
+      <center><img src="images/bluetooth_windows11.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Vous pouvez désormais connecter l'environnement de programmation QuickPi à votre Raspberry, via l'onglet Bluetooth.
+      </p>
+      <center><img src="images/bluetooth_connect.png" style="border: solid black 1px;max-width:400px" /></center>

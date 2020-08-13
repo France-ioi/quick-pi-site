@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="max-width: 800px;margin:auto">
+   <h1>Connexion Bluetooth depuis un téléphone ou une tablette Android</h1>
+   <p>
+      Il est possible de se connecter par Bluetooth au Raspberry Pi depuis un appareil Android, mais cela nécessite de désactiver le Wifi, donc votre connextion internet. Il faut appairer votre appareil Android au Raspberry Pi, puis définir celui-ci comme un point d'accès. Nous présentons ci-dessous les étapes.
+   </p>
+   <p>
+   Pour pouvoir vous connecter par Bluetooth à votre Raspberry Pi, commencez par activer cette possibilité depuis la page de configuration de celui-ci (voir plus haut). Une fois que c'est fait, le fonctionnement dépend de votre appareil.
+   </p>
+   <p>
+      Depuis la page de configuration de votre appareil Android, allez sur la page Connexions. Désactivez le wifi, puis activez le Bluetooth.
+   </p>
+   <center><img src="images/bluetooth_android1.jpg" style="border: solid black 1px;max-width:200px" /></center>
+   <p>
+      Dans la zone "Appareils disponibles", vous devriez y voir apparaître "quickpi1", ou le nom que vous avez donné à votre QuickPi. Cliquez dessus. Au bout d'un moment, il devrait apparaître comme connecté. Réessayez si cela ne fonctionne pas dès la première fois.
+   </p>
+   <center><img src="images/bluetooth_android2.jpg" style="border: solid black 1px;max-width:200px" /></center>
+   <p>
+      Une fois connecté, allez ensuite dans la configuration de l'appareil, puis activez son utilisation pour l'accès internet.
+   </p>
+   <p>
+      Vous n'aurez plus accès à internet, mais vous pourrez, depuis votre navigateur, accéder à la page web de votre Raspberry Pi. Pour cela, entrez 192.168.233.2 dans votre navigateur.
+   </p>
