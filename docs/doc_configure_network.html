@@ -6,14 +6,16 @@
 <body style="max-width: 800px;margin:auto">
    <h1>Accès à la page de configuration</h1>
    <p>
-      Il y a principalement trois manières de configurer votre Raspberry Pi :
+      Il y a plusieurs manières de configurer votre Raspberry Pi :
       <ul>
          <li>En connectant votre ordinateur ou mobile à un point d'accès wifi créé par le Raspberry Pi.</li>
          <li>En branchant votre Raspberry Pi à votre ordinateur par un cable USB.</li>
+         <li>En connectant votre Raspberry Pi à votre réseau Ethernet avec un adaptateur.</li>
          <li>En modifiant un fichier de configuration directement sur la carte micro-SD.</li>
       </ul>
-      Nous présentons ci-dessous les trois possibilités.
+      Nous présentons ci-dessous chacune de ces possibilités, pour que vous puissiez démarrer facilement quelle que soit votre situation.
    </p>
+   <img src="images/wifi_icon.png" style="float:left;height:30px;margin-right:10px" />
    <h2>Connexion par point d'accès Wifi</h2>
    <p>
       La connexion par point d'accès Wifi n'est accessible que si vous disposez de notre Kit ou de la carte QuickPi, car elle se fait via le menu intégré.
@@ -33,6 +35,7 @@
    <p>
       Lorsque vous êtes connecté à ce point d'accès, l'adresse IP du Raspberry Pi est 192.168.233.3. C'est cette IP qui est chargée automatiquement dans le navigateur par le portail captif.
    </p>
+   <img src="images/usb_icon.png" style="float:left;height:40px;margin-right:10px" />
    <h2>Connexion par USB</h2>
    <p>
       Si pour une raison ou une autre vous ne pouvez pas passer par le point d'accès wifi. Il est possible de se connecter par USB, grâce au système de "Ethernet par USB" qui est préconfiguré sur le Raspberry Pi
@@ -50,7 +53,20 @@
    <p>
       Notez que si vous avez accès au menu via la carte QuickPi, vous pouvez vérifier si la connexion Ethernet par USB fonctionne, en allant dans le menu du Raspberry : Configuration -> Show IP Address.
    </p>
-   <h2>Éditer directement la configuration</h2>
+   <img src="images/ethernet_icon.png" style="float:left;height:30px;margin-right:10px" />
+   <h2>Connexion par Ethernet</h2>
+   <p>
+      Il est possible de relier le Raspberry Pi à votre réseau par un cable Ethernet câblé en branchant un <a href="https://www.amazon.fr/gp/product/B073GTL975/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" target="_blank">adaptateur micro-usb vers Ethernet</a>, sur le port micro-usb data de votre Raspberry Pi Zero (le plus proche du centre).
+   </p>
+   <p>
+      En supposant que votre réseau est configuré en dhcp (le plus courant), une adresse IP sera automatiquement affectée à votre Raspberry Pi. Vous pouvez la trouver dans le menu Configuration -> Show IP Address, indiquée comme de type "Cable".
+   </p>
+   <p>
+      Depuis un ordinateur branché sur le même réseau local, et en supposant que celui-ci ne bloque pas la communication directe entre les machines, vous pouvez simplement taper cette ip dans votre navigateur pour accéder à la page de configuration. Dans le cas contraire, contactez votre administrateur. Notez que l'adresse Mac du Raspberry Pi est disponible dans le menu Configuration -> Show MAC Address".
+   </p>
+
+   <img src="images/microsd_icon.png" style="float:left;height:30px;margin-right:10px" />
+   <h2>Éditer la configuration sur la carte micro-sd</h2>
    <p>
       Si vous ne parvenez pas à utiliser le point d'accès ni à faire fonctionner l'Ethernet par USB depuis votre ordinateur, vous pouvez effectuer la configuration en éditant le fichier depuis la carte micro-SD. Les explications sont données un peu plus bas dans ce document.
    </p>
@@ -236,9 +252,17 @@ SCHOOL=schoolkey
       
       <p>Vous pouvez connecter votre Raspberry Pi à un réseau filaire Ethernet, grâce à un <a href="https://www.amazon.fr/gp/product/B073GTL975/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1" target="_blank">adaptateur micro-usb vers Ethernet.</a></p>
       <center><img src="images/adaptateur_ethernet.jpg" style="width:200px" /></center>
-      <p>Nous n'avons pas encore testé nous-mêmes la compatibilité de ce matériel, mais nous allons le faire très bientôt.</p>
+      <p>Nous avons testé cet adaptateur (et quelques autres), il fonctionne avec QuickPi.</p>
+      <p>Si votre réseau ethernet est configuré pour attribuer automatiquement les IPs aux appareils qui s'y connectent, vous avez simplement à le brancher. Vous pourrez alors trouver l'adresse IP qui lui a été attribuée depuis le menu Configuration -> Show IP Address
+      </p>
+      <p>
+      Notez qu'une opération de la part de votre administrateur réseau peut être nécessaire pour autoriser le Raspberry Pi à s'y connecter. Notez que l'adresse Mac est disponible depuis le menu Configuration -> Show Mac Address
+      </p>
+      <p>
+      Si votre réseau restreint les accès directs entre machines, ou que votre ordinateur est sur un autre sous-résau, il faudra activer le mode "Connexion via les serveurs France-ioi" pour pouvoir accéder au Raspberry Pi directement depuis votre navigateur.
+      </p>
       
-      <h3>En créant votre propre point d'accès Wifi</h3>
+      <h3>Création de votre propre point d'accès Wifi</h3>
 
       <p>Si vous avez un réseau filaire Ethernet auquel vous pouvez vous connecter, vous pouvez créer votre propre point d'accès Wifi, en achetant un appareil que comme point d'accès bon marché TL-MR3020, que nous avons validé pour cet usage.
       </p>
@@ -264,7 +288,39 @@ SCHOOL=schoolkey
       </p>
 
       <h3>Connexion par Bluetooth</h3>
-      
-      <p>Nous ajouterons prochainement une documentation sur la manière dont vous pouvez vous connecter au Raspberry Pi en Bluetooth.
-   
+      <p>
+      Pour pouvoir vous connecter par Bluetooth à votre Raspberry Pi, commencez par activer cette possibilité depuis la page de configuration de celui-ci (voir plus haut). Une fois que c'est fait, le fonctionnement dépend de votre appareil.
+      </p>
+      <h4>Depuis un iPad ou iPhone</h4>
+      <p>Aller dans la page de configuration de votre iPad ou iPhone, et activez le Bluetooth. Vous voyez alors la liste des appareils bluetooth disponibles, qui ressemble à ceci :
+      </p>
+      <center><img src="images/bluetooth_ipad1.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Dans la zone "connexion aux autres appareils", vous devriez y voir apparaître "quickpi1", ou le nom que vous avez donné à votre QuickPi. Cliquez dessus. Au bout d'un moment, il devrait apparaître comme connecté. Réessayez si cela ne fonctionne pas dès la première fois.
+      </p>
+      <center><img src="images/bluetooth_ipad2.png" style="border: solid black 1px;max-width:400px" /></center>
+      <p>
+         Vous pouvez alors vous connecter à ce Raspberry depuis l'environnement QuickPi en utilisant l'onglet "Bluetooth" dans son interface de connexion.
+      </p>
+      <p>
+         Vous pouvez aussi charger la page de configuration directement dans votre navigateur, en allant à l'adresse : 192.168.233.2
+      </p>
 
+      <h4>Depuis un téléphone ou appareil Android</h4>
+      <p>
+         Il est possible de se connecter par Bluetooth au Raspberry Pi depuis un appareil Android, mais cela nécessite de désactiver le Wifi, donc votre connextion internet.
+      </p>
+      <p>
+         Depuis la page de configuration de votre appareil Android, allez sur la page Connexions. Désactivez le wifi, puis activez le Bluetooth.
+      </p>
+      <center><img src="images/bluetooth_android1.jpg" style="border: solid black 1px;max-width:200px" /></center>
+      <p>
+         Dans la zone "Appareils disponibles", vous devriez y voir apparaître "quickpi1", ou le nom que vous avez donné à votre QuickPi. Cliquez dessus. Au bout d'un moment, il devrait apparaître comme connecté. Réessayez si cela ne fonctionne pas dès la première fois.
+      </p>
+      <center><img src="images/bluetooth_android2.jpg" style="border: solid black 1px;max-width:200px" /></center>
+      <p>
+         Une fois connecté, allez ensuite dans la configuration de l'appareil, puis activez son utilisation pour l'accès internet.
+      </p>
+      <p>
+         Vous n'aurez plus accès à internet, mais vous pourrez, depuis votre navigateur, accéder à la page web de votre Raspberry Pi. Pour cela, entrez 192.168.233.2 dans votre navigateur.
+      </p>
