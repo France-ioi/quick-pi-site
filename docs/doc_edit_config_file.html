@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="max-width: 800px;margin:auto">
+   <h1>Éditer le fichier de configuration directement</h1>
+   <p>
+      Si vous ne pouvez pas vous connecter au Raspberry Pi via le point d'accès Wifi (par exemple parce-que vous n'avez pas la carte QuickPi pour y accéder), et que la connexion par USB ne fonctionne pas, il reste une possibilité pour configurer votre Raspberry Pi&nbsp;: éditer directement le fichier de configuration qui se trouve sur la carte micro-SD.
+   </p>
+   <p>
+      Branchez votre carte micro-SD sur un ordinateur, grâce à un adaptateur vers une carte SD ou un port USB.
+   </p>
+   <img src="images/microsd_adapter.png" style="width:200px"/>
+   <p>
+      Refermez les éventuels messages d'alerte vous disant que la carte a un problème ou qu'elle doit être formatée. Ces messages sont à ignorer.
+   </p>
+   <p>
+      Depuis votre explorateur, accéder au lecteur qui correspond à la carte que vous venez de brancher. Il s'appellera probablement <code>boot</code>
+   </p>
+   <img src="images/sdcard_files.png" style="width:500px"/> 
+   <p>
+      Ouvrez le fichier <code>quickpi.txt</code> dans un éditeur de texte. La première fois, son contenu ressemblera à ceci :
+   </p>
+   <pre>
+SSID=wifinetworkname
+PASSWORD=wifipassword
+STATICNETWORK=0
+STATICIPADDR=192.168.1.31
+STATICGATEWAY=192.168.1.1
+STATICDNS=8.8.8.8
+
+ENABLEBLUETOOTH=0
+
+NAME=quickpi1
+SCHOOL=schoolkey
+   </pre>
+   <h2>Édition de la configuration du Wifi</h2>
+   <h3>1) Renseignez le SSID</h3>
+   <p>
+      Mettez le SSID de votre réseau juste apès "SSID=". Par exemple s'il s'agit de "MonReseau", la ligne doit devenir :
+   </p>
+   <pre>SSID=MonReseau</pre>
+   <h3>2) Renseignez le mot de passe</h3>
+   <p>
+      Mettez le mot de passe de votre réseau juste après "PASSWORD=". Par exemple s'il s'agit de "MonMotDePasse", la ligne doit devenir :
+   </p>
+   <pre>PASSWORD=MonMotDePasse</pre>
+   <h3>3) Indiquez le type de réseau</h3>
+   <p>Après "STATICNETWORK=", mettez un 0 si les adresses IP sur ce réseau sont attribuées dynamiquement, et un 0 sinon.</p>
+   <h3>4) Si c'est un réseau statique uniquement</h3>
+   <p>Indiquez l'adresse IP attribuée au Raspberry Pi après "STATICIPADDR=".</p>
+   <p>Indiquez l'adresse IP de la passerelle (Gateway) après "STATICGATEWAY=".</p>
+   <p>Indiquez l'adresse IP du DNS après "STATICDNS=".</p>
+   <h3>5) Choisisez un nom pour votre Raspberry</h3>
+   <p>Attribuez un nom à chacun des Raspberry que vous utiliserez sur le même réseau. Utilisez des lettres minuscules non accentuées et des chiffres, mais pas d'espaces. Une fois un nom choisi, collez une étiquette avec ce nom sur le Raspberry.</p>
+   <p>Renseignez ce nom après "NAME=" dans la configuration.</p>
+   <h3>6) Choissez un nom pour l'établissement</h3>
+   <p>Attribuer un nom à votre établissement, qui sera commun à tous les Raspberry Pi que vous connecterez sur le même réseau. Utilisez des lettres minuscules non accentuées et des chiffres, mais pas d'espaces. Vous pouvez aussi l'ajouter sur l'étiquette.</p>
+   <p>Renseignez ce nom après "SCHOOL=" dans la configuration.</p>
+   
+   <h2>Enregistrez et éjectez</h3>
+   <p>
+      Après avoir modifié le fichier de configuration, enregistrez le, et éjectez proprement la carte micro-sd de votre ordinateur (comme avant d'éjecter une clé USB).
+   </p>
+   <img src="images/sdcard_eject.png" style="width:200px"/>
+   <p>
+      Replacez alors la carte SD dans le Raspberry PI alors qu'il est éteint, puis rallumez-le.
+   </p>
